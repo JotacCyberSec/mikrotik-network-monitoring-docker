@@ -1,5 +1,3 @@
-version: '3'
-
 volumes:
   prometheus_data:
     name: prometheus_data
@@ -11,7 +9,7 @@ volumes:
 
 networks:
   monitoring:
-    external: true
+    driver: bridge
 
 services:
   prometheus:
